@@ -72,7 +72,12 @@ class DosMitadesActivity : AppCompatActivity() {
 
     // Mostrar el resultado en un AlertDialog o con Toast (elige uno)
     private fun mostrarResultado(resultado: String) {
-        Toast.makeText(this, "Resultado: $resultado", Toast.LENGTH_LONG).show()
-        // También puedes usar un TextView fijo si prefieres mostrarlo dentro de la pantalla.
+        try {
+            val txtResultado = findViewById<TextView>(R.id.txtResultado)
+            txtResultado.text = "$resultado"
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error mostrando resultado: ${e.message}", Toast.LENGTH_SHORT).show()
+        }
     }
+
 }

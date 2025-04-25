@@ -53,14 +53,16 @@
                 android:text="Hola correo@ejemplo.com"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 android:layout_marginBottom="12dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
                 android:text="Te voy a ayudar a solucionar el problema de las 2 mitades.\n\n1. Ingresa una cadena de caracteres.\n2. Te ayudaré a cortarla en dos partes 'iguales' (si la longitud es impar, la primera tendrá un carácter más).\n3. Luego imprimiré la cadena con ambas mitades intercambiadas."
-                android:textSize="14sp"
-                android:layout_marginBottom="24dp" />
+                android:textColor="#000000"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/edtTexto"
@@ -84,8 +86,21 @@
                 android:background="@drawable/rounded_button"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
         </LinearLayout>
     </ScrollView>
+
 
     <!-- Menú inferior personalizado -->
     <LinearLayout

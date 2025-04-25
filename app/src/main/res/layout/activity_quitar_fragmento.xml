@@ -53,6 +53,7 @@
                 android:text="Hola correo@ejemplo.com"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 android:layout_marginBottom="12dp"/>
 
             <TextView
@@ -60,7 +61,8 @@
                 android:layout_height="wrap_content"
                 android:text="Te voy a ayudar a resolver el problema de quitar fragmentos.\n\n1. Ingresa una cadena que contenga al menos dos letras 'h'.\n2. Eliminaré la primera y la última aparición de 'h', junto con todo lo que esté entre ellas.\n3. El resultado se mostrará debajo."
                 android:textSize="14sp"
-                android:layout_marginBottom="24dp" />
+                android:layout_marginBottom="24dp"
+                android:textColor="#000000"/>
 
             <EditText
                 android:id="@+id/edtTexto"
@@ -90,10 +92,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:layout_marginTop="16dp"
-                android:textColor="#000000"/>
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
         </LinearLayout>
     </ScrollView>
 

@@ -53,6 +53,7 @@
                 android:text="Hola correo@ejemplo.com"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 android:layout_marginBottom="12dp"/>
 
             <TextView
@@ -60,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="Te voy a ayudar a intercambiar dos palabras.\n\n1. Ingresa exactamente dos palabras separadas por un espacio.\n2. Te mostraré el orden cambiado.\n3. Si hay más o menos de dos, mostraré un error."
                 android:textSize="14sp"
+                android:textColor="#000000"
                 android:layout_marginBottom="24dp" />
 
             <EditText
@@ -90,10 +92,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:layout_marginTop="16dp"
-                android:textColor="#000000"/>
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
         </LinearLayout>
     </ScrollView>
 
